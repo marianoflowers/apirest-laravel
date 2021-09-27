@@ -1,18 +1,18 @@
-### apirest-laravel - Example
+# apirest-laravel - Example
 -Laravel Application
 
-### Build
+## Build
 
-# create database 
+### create database 
 name: apirest_laravel
 
-# run migrations
+### run migrations
 php artisan migrate
 
-# run seeders
+### run seeders
 php artisan db:seed
 
-# run server
+### run server
 php artisan serve
 
 ## Description
