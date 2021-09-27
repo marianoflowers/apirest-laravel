@@ -23,6 +23,7 @@ Articulo::factory()->count(10)->create()
 API desarrollada en laravel 8 y base de datos MySQL, a fines de ejemplo.
 
 ## Routes
+```
 /**
     * @index Retorna el lista de productos en la base de datos (Descripción, Precio, Stock)
     * @store Almacena en la base de datos un nuevo producto
@@ -33,12 +34,14 @@ Route::get('/articulos', [ArticuloController::class, 'index']);
 Route::post('/articulos', [ArticuloController::class, 'store']);
 Route::put('/articulos/{id}', [ArticuloController::class, 'update']);
 Route::delete('/articulos/{id}', [ArticuloController::class, 'destroy']);
-
+```
 ## Params
+```
 /**
     * @param id del producto en la base de datos
 */
 Route::put('/articulos/{id}', [ArticuloController::class, 'update']);
 Route::delete('/articulos/{id}', [ArticuloController::class, 'destroy']);
+```
 
 
